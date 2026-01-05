@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h2 {
+      color: #1e88e5;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #1e88e5;
+    }
+
+    /* Hero Section */
+    .hero {
+      margin: 40px auto;
+      width: 85%;
+      background: linear-gradient(to right, #1e88e5, #42a5f5);
+      padding: 80px 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      border: none;
+      background: #fff;
+      color: #1e88e5;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #e3f2fd;
+    }
+
+    /* Why Choose Us */
+    .why {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .why h2 {
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      width: 250px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1e88e5;
+    }
+
+    /* Feedback Section */
+    .feedback {
+      background: #fff;
+      padding: 60px 20px;
+      margin-top: 40px;
+    }
+
+    .feedback h2 {
+      text-align: center;
+      color: #1e88e5;
+      margin-bottom: 10px;
+    }
+
+    .feedback p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .feedback form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .form-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-block label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .feedback input,
+    .feedback textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .feedback textarea {
+      resize: none;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+
+    .feedback button {
+      width: 100%;
+      padding: 12px;
+      background: #1e88e5;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .feedback button:hover {
+      background: #1565c0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1e88e5;
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h2>HEALTH HUB</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Medicines</a>
+      <a href="#">About</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>WELCOME TO HEALTH HUB</h1>
+    <p>Your trusted online pharmacy for all your healthcare needs</p>
+    <form action="task3.html">
+    <button>Shop Now</button>
+    </form>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why">
+    <h2>Why Choose Us?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>24/7 Service</h3>
+        <p>Order medicines anytime, anywhere</p>
+      </div>
+      <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>Get your medicines delivered quickly</p>
+      </div>
+      <div class="card">
+        <h3>Genuine Products</h3>
+        <p>100% authentic medicines</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="feedback" id="feedback">
+    <h2>Feedback</h2>
+    <p>We’d love to hear from you</p>
+
+    <form action="https://formspree.io/f/xpqwbrbj" method="POST">
+      <div class="form-grid">
+        <div class="form-block">
+          <label>Name</label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div class="form-block">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-block">
+          <label>Subject</label>
+          <input type="text" name="subject">
+        </div>
+      </div>
+
+      <label>Message</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Health Hub | All Rights Reserved
+  </footer>
+
+</body>
+</html>
